@@ -1,38 +1,17 @@
-.App {
-  text-align: center;
+.content{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content.show{
+    max-height: 150px;
+    overflow-y: scroll;
+    transition: all 0.4s ease-in;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content-container::-webkit-scrollbar {
+  width: 1px; /* Adjust the width to make the scrollbar thinner */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
