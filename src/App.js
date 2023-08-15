@@ -35,7 +35,7 @@ function App() {
   return (
 
     <div className="min-h-screen flex justify-between w-11/12 mx-auto">
-      <div>Logo</div>
+    
       <div className="flex gap-4">links
 <p>Link 1</p>
 <p>Link 2</p>
